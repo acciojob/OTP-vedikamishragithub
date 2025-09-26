@@ -1,6 +1,7 @@
 document.querySelectorAll('.code').forEach((input, index, inputs) => {
   input.addEventListener('input', (e) => {
     const value = e.target.value;
+  
     if (!/^\d$/.test(value)) {
       e.target.value = ''; // Clear non-numeric input
       return;
