@@ -11,7 +11,7 @@ document.querySelectorAll('.code').forEach((input, index, inputs) => {
   });
 
   input.addEventListener('keydown', (e) => {
-    if (e.key === 'backspace' && !e.target.value && index > 0) {
+    if (e.key === 'Backspace' && !e.target.value && index > 0) {
       inputs[index - 1].focus(); // Move focus to previous input on Backspace
     }
   });
