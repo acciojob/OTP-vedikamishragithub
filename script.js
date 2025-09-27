@@ -1,6 +1,6 @@
 document.querySelectorAll('.code').forEach((input, index, inputs) => {
   input.addEventListener('input', (e) => {
-    const value = e.target.value;
+    let value = e.target.value;
   
     if (!/^\d$/.test(value)) {
       e.target.value = ''; // Clear non-numeric input
@@ -17,11 +17,11 @@ document.querySelectorAll('.code').forEach((input, index, inputs) => {
     }
   });
 
-  input.addEventListener('focus', () => {
-    input.classList.add('active');
-  });
+  // input.addEventListener('focus', () => {
+  //   input.classList.add('active');
+  // });
 
-  input.addEventListener('blur', () => {
-    input.classList.remove('active');
-  });
+  // input.addEventListener('blur', () => {
+  //   input.classList.remove('active');
+  // });
 });
